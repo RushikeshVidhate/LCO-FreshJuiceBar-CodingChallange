@@ -12,25 +12,31 @@
     <!-- Vendor CSS -->
     <!-- Font-Awesome CSS -->
     <link rel="stylesheet" href="./css/vendor/normalize.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="./css/vendor/animate.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css"> -->
+
+    <link rel="stylesheet" href="/LCO-FreshJuiceBar-CodingChallange/css/vendor/font-awesome.min.css">
+    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous"> -->
+    
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="./css/vendor/bootstrap.min.css">
 </head>
 <body>
     <header>
         <!-- navbar started -->
-        <nav class="r--nav-container">
+        <nav class="r--nav-container" id="navbar">
             <div class="r--logo-container">
-                <img src="./images/logo-2.png" alt="">
+                <img src="./images/logo-2.png" alt="LCO logo">
                 <span class="r--logo-title">Fresh Juice Bar</span>
             </div>
             <div class="r--nav-content-container">
                 <span class="r--toggle-icon" style="cursor:pointer" onclick="openNav()"><img src="./images/toggler-icon.png" alt=""></span>
                 <ul class="r--nav-content">
-                    <li>About</li>
-                    <li>Menu</li>
-                    <li>Services</li>
-                    <li>Contact</li>
+                    <li href="#SectionAbout">About</li>
+                    <li href="#SectionMenu">Menu</li>
+                    <li href="#SectionServices">Services</li>
+                    <li href="#SectionContact">Contact</li>
                 </ul>
             </div>
         </nav>
@@ -53,141 +59,186 @@
     <main>
         <section class="r--section-hero">
             <div class="first">
-                    <img src="./images/hero-image.svg" alt="Glass with Fruits and Juice">
+                    <img class="animated fadeIn" src="./images/hero-image.svg" alt="Glass with Fruits and Juice">
             </div>
             <div class="second">
                 <div>
-                    <h1 class="title">We Make & Deliver Juice Built In Organic Way</h1>
-                    <div class="r--button-container">
+                    <h1 class="title animated bounceInDown">ORGANIC JUICE </h1>
+                    <h5 class="text-center animated bounceInDown">Always Fresh, Always There.</h5>
+                    <div class="r--button-container animated bounceInDown text-center" >
                         <a href="#SectionContact"> <i class="fa fa-phone"></i> Contact</a>
-                        <a href="#SectionMenu"><i class="fa fa-book"></i> Menu</a>
+                        <a href="#SectionMenu"><i class="fa fa-shopping-cart"></i> Order now</a>
                     </div>
                 </div>
                     
             </div>
-            <div class="text-center hero-scroll">
+            <div class="text-center hero-scroll animated bounce">
                 <a href="#SectionAbout">
                         <i class="fa fa-angle-down"></i>
                 </a>
                     
             </div>
         </section>
-        <section class="r--section-about" id="SectionAbout">
-            <div class="title-container"> 
+        <section class="r--section-about about-scroll-animations" id="SectionAbout">
+            <div class="title-container animated"> 
                     <h6 class="subtitle">#Who we are</h6>
                     <h2 class="title">ABOUT US</h2>
             </div>
-            <div class="content-container">
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis qui non delectus incidunt eius esse! Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, possimus? Quas facilis aut ea laudantium corporis iure, excepturi ab harum.</p>
+            <div class="content-container animated">
+                <p>The LCO is an organic, raw , green juice bar. We offer raw of organic juices, smoothies,coffee and funn!!.</p>
+                <p>Our cold pressed juices are made daily and we allow customizations on any centrifugal made juices to fit all your needs. We strive to continuously push the standards of quality to a new level.</p>
             </div>
         </section>
-        <section class="r--section-menu r--bg-primary" id="SectionMenu">
+        <section class="r--section-menu r--bg-primary menu-scroll-animations" id="SectionMenu">
                 <div class="title-container"> 
                         <h6 class="subtitle">#What we serve</h6>
                         <h2 class="title">OUR MENU</h2>
                 </div>
-                <div class="content-container">
+                <div class="content-container ">
                     <div class="menu-title-container">
                         <ul>
-                            <li class="active item">smoothie</li>
+                            <li class="active item">smoothies</li>
                             <li class="item">pastry</li>
                             <li class="item">icemax</li>
                         </ul>
                     </div>
                     <hr>
-                   
-                        <ul class="menu-list-container">
-                            <li>
-                                <div class="title">watermilen</div>
-                                <div class="price">$ 5</div>
-                            </li>
-                            <li>
-                                <div class="title">watermilen</div>
-                                <div class="price">$ 5</div>
-                            </li>
-                            <li>
-                                <div class="title">watermilen</div>
-                                <div class="price">$ 5</div>
-                            </li>
-                            <li>
-                                <div class="title">watermilen</div>
-                                <div class="price">$ 5</div>
-                            </li>
-                            <li>
-                                <div class="title">watermilen</div>
-                                <div class="price">$ 5</div>
-                            </li>
-                            <li>
-                                <div class="title">watermilen</div>
-                                <div class="price">$ 5</div>
-                            </li>
-                            
-                        </ul>
-                        <div class="cta-btn">
-                            <a href="">BUY NOW</a>
-                        </div>
+                    <ul class="menu-list-container">
+                        <li class="animated">
+                            <div class="title">watermilen</div>
+                            <div class="price">&#8377 50</div>
+                        </li>
+                        <li class="animated">
+                            <div class="title">grape</div>
+                            <div class="price">&#8377 60</div>
+                        </li>
+                        <li class="animated">
+                            <div class="title">blueberry</div>
+                            <div class="price">&#8377 45</div>
+                        </li>
+                        <li class="animated">
+                            <div class="title">orange</div>
+                            <div class="price">&#8377 75</div>
+                        </li>
+                        <li class="animated">
+                            <div class="title">pineapples</div>
+                            <div class="price">&#8377 50</div>
+                        </li>
+                        <li class="animated">
+                            <div class="title">avacado</div>
+                            <div class="price">&#8377 60</div>
+                        </li>
+                        
+                    </ul>
+                    <div class="cta-btn">
+                        <a href="">BUY NOW</a>
+                    </div>
                 </div>
             </section>
-        <section class="r--section-services" id="SectionServices">
+        <section class="r--section-services services-scroll-animations" id="SectionServices">
             <div class="title-container"> 
-                    <h6 class="subtitle">#What we serve</h6>
-                    <h2 class="title">OUR SERVICES</h2>
+                    <h6 class="subtitle">#We also provide</h6>
+                    <h2 class="title">SERVICES</h2>
             </div>
             <div class="content-container">
-                <div class="service-card">
+                <div class="service-card animated">
                     <div class="icon-container"><img src="./images/truck-icon.png" alt=""></div>
-                    <div class="title"><h3>DOORSTEM DELIVERY</h3></div>
-                    <div class="info"><h6><img src="./images/info-icon.png" alt="">Lorem ipsum dolor sit amet.</h6></div>
+                    <div class="title"><h3>Doorstep Delivery</h3></div>
+                    <div class="info"><h6><img src="./images/info-icon.png" alt="">Within 1km radius.</h6></div>
                 </div>
-                <div class="service-card">
+                <div class="service-card animated">
                     <div class="icon-container"><img src="./images/bag-icon.png" alt=""></div>
-                    <div class="title"><h3>BULK ORDER</h3></div>
-                    <div class="info"><h6><img src="./images/info-icon.png" alt="">Lorem ipsum dolor sit amet.</h6></div>
+                    <div class="title"><h3>Bulk Order</h3></div>
+                    <div class="info"><h6><img src="./images/info-icon.png" alt="">Need to be confirmed before 1 day.</h6></div>
                 </div>
             </div>
         </section>
-        <hr>
-        <section class="r--section-contact" id="SectionContact">
-                <div class="title-container"> 
-                        <h6 class="subtitle">#Reach to us</h6>
-                        <h2 class="title">CONTACT</h2>
-                </div>
-                <div class="content-container">   
+         <section class="r--section-reviews reviews-scroll-animations" id="SectionReviews">
+            <div class="title-container"> 
+                    <h6 class="subtitle">#What people says</h6>
+                    <h2 class="title">REVIEWS</h2>
+            </div>
+            <div class="content-container">
+                <div class="review-card animated">
                     <div class="title">
-                        <h5>Phone :</h5>
+                        <h3>Anna Mull</h3>
+                        <h6>@annamull</h6>
                     </div>
-                    <div class="value">
-                        <h6><i class="fa fa-phone"></i> +91 5454657865</h6>
-                    </div>
+                    <div class="info"><h6>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia harum, dicta quo commodi maxime non consectetur blanditiis eligendi quis delectus porro consequuntur libero tenetur sapiente.</h6></div>
                 </div>
-                <div class="content-container">   
+                <div class="review-card animated">
+                    <div class="title">
+                        <h3>Petey Cruiser</h3>
+                        <h6>@peteycruiser</h6>
+                    </div>
+                    <div class="info"><h6>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet consectetur adipisicing elit.</h6></div>
+                </div>
+                <div class="review-card animated">
+                    <div class="title">
+                        <h3>Paige Turner</h3>
+                        <h6>@paigeturner</h6>
+                    </div>
+                    <div class="info"><h6>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia harum, dicta quo commodi maxime non consectetur.</h6></div>
+                </div>
+              
+            </div>
+            <div class="text-center mt-2">
+                <a href="#">read more</a>
+            </div>
+        </section>
+        <!-- <hr> -->
+        <section class="r--section-contact" id="SectionContact">
+            <div class="part-1 contact-scroll-animations-1">
+                    <div class="title-container animated"> 
+                            <h6 class="subtitle">#Reach to us</h6>
+                            <h2 class="title">CONTACT</h2>
+                    </div>
+                    <div class="content-container animated">   
                         <div class="title">
-                            <h5>Location :</h5>
+                            <h5>Phone :</h5>
                         </div>
                         <div class="value">
-                            <h6><i class="fa fa-map-marker"></i> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse placeat laborum vitae, eligendi eum nesciunt.</h6>
+                            <h6><i class="fa fa-phone"></i> +91 1234567890</h6>
                         </div>
                     </div>
-
-                    <div class="contact-form">
-                        <h3 class="text-left">Write to us</h3>
-                            <form>
-                                    <div class="form-group">
-                                      <label for="name">Name</label>
-                                      <input type="text" class="form-control" id="name" placeholder="name">
-                                    </div>
-                                    <div class="form-group">
-                                      <label for="email">Email address</label>
-                                      <input type="email" class="form-control" id="email" placeholder="yourname@email.com">
-                                    </div>
+                    <div class="content-container animated">   
+                            <div class="title">
+                                <h5>Location :</h5>
+                            </div>
+                            <div class="value">
+                                <h6><i class="fa fa-map-marker"></i> LCO Training Center, Rajawat Tower - 3rd Floor, 7 Number, Skit Chaurah, Jagatpur , jaipur, Rajasthan</h6>
+                            </div>
+                        </div>
+                        <div class="social-icons-container animated">
+                            <h5>Follow us :</h5>
+                            <span><i class="fa fa-facebook mx-1"></i></span>
+                            <span><i class="fa fa-google-plus mx-1"></i></span>
+                            <span><i class="fa fa-youtube mx-1"></i></span>
+                        </div>
+    
+            </div>
+            <div class="part-2 contact-scroll-animations-2">
+                    <div class="contact-form animated">
+                            <h3 class="text-left">Write to us</h3>
+                                <form>
+                                        <div class="form-group">
+                                          <label for="name">Name</label>
+                                          <input type="text" class="form-control" id="name" placeholder="name">
+                                        </div>
+                                        <div class="form-group">
+                                          <label for="email">Email address</label>
+                                          <input type="email" class="form-control" id="email" placeholder="yourname@email.com">
+                                        </div>
+                        
+                                        <div class="form-group">
+                                          <label for="message">Your message</label>
+                                          <textarea class="form-control" id="message" rows="3" placeholder="Type your message here"></textarea>
+                                        </div>
+                                        <button type="submit" class="btn">Submit</button>
+                                      </form>
+                        </div>
+            </div>
                     
-                                    <div class="form-group">
-                                      <label for="message">Your message</label>
-                                      <textarea class="form-control" id="message" rows="3" placeholder="Type your message here"></textarea>
-                                    </div>
-                                    <button type="submit" class="btn">Submit</button>
-                                  </form>
-                    </div>
         </section>
     </main>
     <footer>
@@ -200,16 +251,17 @@
             </div>
         </div>
         <div class="footer-nav-container">
-            <a href="">Home</a>
-            <a href="">About</a>
-            <a href="">Menu</a>
-            <a href="">Services</a>
-            <a href="">Contact</a>
+            <a href="#navbar">Home</a>
+            <a href="#SectionAbout">About</a>
+            <a href="#SectionMenu">Menu</a>
+            <a href="#SectionServices">Services</a>
+            <a href="#SectionContact">Contact</a>
         </div>
         <hr>
         <div class="copywrite-notice-container">
-            <h5>Copywrite notice</h5>
-        </div>
+            <h6>Copywrite notice</h6>
+            <h6>Image Credit : Respective Owner</h6>
+        </div>                                  
     </footer>
     
 
